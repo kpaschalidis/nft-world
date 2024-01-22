@@ -39,16 +39,16 @@ Copy `.env.example` to `.env` and fill in fields
 npx hardhat compile
 
 # deploying
-npx hardhat deploy --network rinkeby --base-token-uri {BASE_TOKEN_URI}
+npx hardhat deploy --network goerli --base-token-uri {BASE_TOKEN_URI}
 
 # is-paused
-npx hardhat is-paused --network rinkeby --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
+npx hardhat is-paused --network goerli --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
 
 # unpause, token contract, initial the contract paused
-npx hardhat unpause --network rinkeby --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
+npx hardhat unpause --network goerli --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
 
 # Hardhat console
-npx hardhat console --network rinkeby
+npx hardhat console --network goerli
 
 # commands via `hardhat console`
 ```sh
@@ -72,15 +72,14 @@ await saleContract.lazyMint(tokenIds);
 ````
 
 # mint (not lazy), only owner
-
-npx hardhat mint-land --network rinkeby --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY} --to {RECEIVER_ADDRESS} --x {X_COORDINATE} --y {Y_COORDINATE}
+```
+npx hardhat mint-land --network goerli --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY} --to {RECEIVER_ADDRESS} --x {X_COORDINATE} --y {Y_COORDINATE}
+```
 
 # pause
-
-npx hardhat pause --network rinkeby --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
-
-# replace `rinkeby` with `mainnet` to productionize
-
+```
+npx hardhat pause --network goerli --world-land-token-proxy {WORLD_LAND_TOKEN_ADDRESS_PROXY}
 ```
 
-```
+**Replace `goerli` with `mainnet` to productionize**
+
