@@ -3,6 +3,11 @@
 `World` is a Metaverse consisting of a 3D world. Will provide virtual experiences, community engagement opportunities, hosted
 content and utility to a wide range of vertical and horizontal market segments.
 
+# TODO: 
+
+- 🚧 Test cases
+- Deployment script
+
 ## Development
 
 ### Install dependencies
